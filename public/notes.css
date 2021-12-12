@@ -1,0 +1,191 @@
+.header {
+    margin: 2em 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./deathnote.jpeg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center top;
+    min-height: 100vh;
+    width: 90%;
+}
+
+.note-section>div {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#firstRow {
+    margin-top: 180px;
+}
+
+#secondRow {
+    margin-top: -50px;
+}
+
+.note-section textarea {
+    width: 100%;
+}
+
+.note {
+    background: white;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px #a0a0a0;
+    display: flex;
+}
+
+.note .input {
+    flex: 1;
+}
+
+.note .input textarea {
+    background: white;
+    border: solid 2px white;
+    color: black;
+}
+
+.note .input:hover textarea {
+    border: solid 2px red;
+    transition: 0.5s;
+}
+
+.saving {
+    font-size: 12px;
+    display: none;
+}
+
+#yourNote {
+    color: red;
+}
+
+.remove {
+    float: right;
+    padding: 0 0.375rem;
+    background: red;
+    color: #fff;
+    outline: none;
+}
+
+.remove:hover {
+    background: black;
+    color: red;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+.remove:active,
+.remove:focus,
+.remove:visited {
+    outline: none;
+    border: 0px solid transparent;
+}
+
+.noteArea {
+    height: 100px;
+}
+
+.noteArea:focus {
+    outline: none;
+    border: 0px solid transparent;
+}
+
+#write,
+button,
+#loginPage-submit,
+#signupPage-submit {
+    background: red;
+    border: transparent;
+    color: white;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+#write:hover,
+button:hover,
+#loginPage-submit:hover,
+#signupPage-submit:hover {
+    background: transparent;
+    color: red;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer {
+    margin: 20px;
+    font-size: 12px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.firstPage-header {
+    margin-bottom: 200px;
+}
+
+.firstPage-h1 {
+    margin-bottom: 20px;
+}
+
+.loginPage h1,
+.signupPage h1,
+.errorPage h1 {
+    margin-bottom: 30px;
+}
+
+.loginInput,
+.signupInput {
+    margin-bottom: 20px;
+}
+
+.loginPage input,
+.signupPage input {
+    background: white;
+    border: solid 2px white;
+    color: black;
+}
+
+.loginPage input:hover,
+.signupPage input:hover {
+    border: solid 2px red;
+    transition: 0.5s;
+}
+
+.loginPage input:focus,
+.signupPage input:focus {
+    outline: none;
+    border: 0px solid transparent;
+}
+
+.loginPage h3,
+.signupPage h3,
+.errorPage h3 {
+    margin-top: 200px;
+    color: red;
+}
