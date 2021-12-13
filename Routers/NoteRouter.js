@@ -25,8 +25,10 @@ class NoteRouter {
                 let notes = notesArr.map((a) => a['note'])
                 res.json(notes)
             })
-            .catch((err) => res.status(500).json(err))
-        );
+            .catch((err) => {
+                res.status(500)
+                return res.json(err)
+            }));
     }
 
     // 2. POST Method
@@ -38,7 +40,10 @@ class NoteRouter {
                 let notes = notesArr.map((a) => a['note'])
                 res.json(notes)
             })
-            .catch((err) => res.status(500).json(err))
+            .catch((err) => {
+                res.status(500)
+                return res.json(err)
+            })
         );
     }
 
@@ -51,7 +56,10 @@ class NoteRouter {
                 let notes = notesArr.map((a) => a['note'])
                 res.json(notes)
             })
-            .catch((err) => res.status(500).json(err))
+            .catch((err) => {
+                res.status(500)
+                return res.json(err)
+            })
         );
     }
 
@@ -64,7 +72,10 @@ class NoteRouter {
                 let notes = notesArr.map((a) => a['note'])
                 res.json(notes)
             })
-            .catch((err) => res.status(500).json(err))
+            .catch((err) => {
+                res.status(500)
+                return res.json(err)
+            })
         );
     }
 }
