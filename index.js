@@ -23,6 +23,7 @@ const app = express()
 app.set('view engine', 'handlebars')
 app.engine('handlebars', engine({ defaultLayout: 'main' }))
 
+require('dotenv').config()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(session({
@@ -31,6 +32,7 @@ app.use(session({
     saveUninitialized: true
 }));
 app.use(flash())
+
 
 app.use(express.static(__dirname + '/public'));
 app.use(passport.initialize())
