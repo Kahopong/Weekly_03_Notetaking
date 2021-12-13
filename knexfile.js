@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '/Users/Kaho/Desktop/FTWD_Node_Weekly_03/Node/03_Weekly/.env' })
+require('dotenv').config()
 
 module.exports = {
 
